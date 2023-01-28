@@ -1,0 +1,23 @@
+{
+  "name": "testing-pracitise",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>",
+  "main": "reverseString.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teitonny/testing-pracitise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teitonny/testing-pracitise/issues"
+  },
+  "homepage": "https://github.com/teitonny/testing-pracitise#readme",
+  "devDependencies": {
+    "jest": "^29.4.0"
+  }
+}
