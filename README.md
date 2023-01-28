@@ -1,288 +1,113 @@
-<a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
+# Testing practice
 
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
+## Learning objectives
+- Write unit tests for a JavaScript app.
+- Use AAA pattern for unit tests.
+- Explain why testing code is important.
 
-OPTIONAL SECTIONS:
-- FAQ
+### Estimated time: 3h
 
-After you're finished please remove all the comments and instructions!
--->
+## Exercise
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
+In this exercise, you will write a few practical tests for JavaScript functions using the [Jest](https://jestjs.io/) library. You should make sure you follow the [AAA pattern](https://github.com/goldbergyoni/javascript-testing-best-practices#-%EF%B8%8F-12-structure-tests-by-the-aaa-pattern) to make your tests easier for other developers to read and understand. You will also try to use the TDD approach in practice.
 
-  <h3><b>Microverse README Template</b></h3>
+*IMPORTANT NOTE: Read **all** instructions before you start this exercise.*
 
-</div>
+### Instructions 
 
-<!-- TABLE OF CONTENTS -->
+- Create a new GitHub repository for this exercise.
 
-# 📗 Table of Contents
+#### Task 1
+- Write a function *stringLength(string)* that takes any string as an argument and returns its characters count.
+- Now write a test for this function.
+- Next, expand your function to make it check if the string is at least 1 character long and not longer than 10 characters. Throw errors if those conditions are not met.
+- Add tests for the new functionality.
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+#### Task 2
+- Write a function *reverseString(string)* function. It should take a string as an argument and return it reversed.
+- Write at least one test for this function.
 
-<!-- PROJECT DESCRIPTION -->
+#### Task 3
+In this task, you will need to write several tests for each tested function. You could write all of your tests directly at the top level, but it's better to group related tests so their output is more readable. *Jest* has the `describe()` method just for that. Read about it [here](https://jestjs.io/docs/api#describename-fn) and apply it in your tests for this task:
 
-# 📖 [your_project_name] <a name="about-project"></a>
+- Write a simple *calculator* class or object, which will have 4 methods: *add*, *subtract*, *divide*, and *multiply*.
+- Write at least 3 tests for each of the calculator methods.
+- Group tests for each method using `describe()` method.
 
-> Describe your project in 1 or 2 sentences.
+#### Task 4 
+In this task we're going to do things differently:
+- Start by writing a test for a *capitalize(string)* function. Your test should make sure that this function takes a string as an argument and returns that string with the first character capitalized.
+- Run your test - it should fail because you don’t have the *capitalize(string)* function implemented yet.
+- Now make your tests green by implementing the *capitalize(string)* function. Think about what the minimum amount of code is necessary to pass this test and write it.
 
-**[your_project__name]** is a...
+Congratulations! In task 4, you have just used the TDD approach for development by writing tests before writing the actual functions. Note the difference in the steps you followed here, compared with those you used in the previous 3 tasks. Don't worry if this last strategy looks counterintuitive or strange at the moment, we will do several more TDD examples in the next module.
 
-## 🛠 Built With <a name="built-with"></a>
+## Challenge yourself
 
-### Tech Stack <a name="tech-stack"></a>
+*Use these questions to check what you learned during this lesson.*
+- What is the next test you can write for *capitalize(string)*?
+- What can go wrong with this function? For example, what happens if someone provides an integer as an input for this function?
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+### Submit your exercise
+[Read this FAQ for a reminder on how to submit your exercise.](https://microverse.zendesk.com/hc/en-us/articles/360061344234)
+Now go to your Student Dashboard and submit your exercise.
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
+------
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
+_If you spot any bugs or issues in this activity, you can [open an issue with your proposed change](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/open_issue.md)._# Testing practice
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+## Learning objectives
+- Write unit tests for a JavaScript app.
+- Use AAA pattern for unit tests.
+- Explain why testing code is important.
 
-<!-- Features -->
+### Estimated time: 3h
 
-### Key Features <a name="key-features"></a>
+## Exercise
 
-> Describe between 1-3 key features of the application.
+In this exercise, you will write a few practical tests for JavaScript functions using the [Jest](https://jestjs.io/) library. You should make sure you follow the [AAA pattern](https://github.com/goldbergyoni/javascript-testing-best-practices#-%EF%B8%8F-12-structure-tests-by-the-aaa-pattern) to make your tests easier for other developers to read and understand. You will also try to use the TDD approach in practice.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+*IMPORTANT NOTE: Read **all** instructions before you start this exercise.*
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Instructions 
 
-<!-- LIVE DEMO -->
+- Create a new GitHub repository for this exercise.
 
-## 🚀 Live Demo <a name="live-demo"></a>
+#### Task 1
+- Write a function *stringLength(string)* that takes any string as an argument and returns its characters count.
+- Now write a test for this function.
+- Next, expand your function to make it check if the string is at least 1 character long and not longer than 10 characters. Throw errors if those conditions are not met.
+- Add tests for the new functionality.
 
-> Add a link to your deployed project.
+#### Task 2
+- Write a function *reverseString(string)* function. It should take a string as an argument and return it reversed.
+- Write at least one test for this function.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+#### Task 3
+In this task, you will need to write several tests for each tested function. You could write all of your tests directly at the top level, but it's better to group related tests so their output is more readable. *Jest* has the `describe()` method just for that. Read about it [here](https://jestjs.io/docs/api#describename-fn) and apply it in your tests for this task:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Write a simple *calculator* class or object, which will have 4 methods: *add*, *subtract*, *divide*, and *multiply*.
+- Write at least 3 tests for each of the calculator methods.
+- Group tests for each method using `describe()` method.
 
-<!-- GETTING STARTED -->
+#### Task 4 
+In this task we're going to do things differently:
+- Start by writing a test for a *capitalize(string)* function. Your test should make sure that this function takes a string as an argument and returns that string with the first character capitalized.
+- Run your test - it should fail because you don’t have the *capitalize(string)* function implemented yet.
+- Now make your tests green by implementing the *capitalize(string)* function. Think about what the minimum amount of code is necessary to pass this test and write it.
 
-## 💻 Getting Started <a name="getting-started"></a>
+Congratulations! In task 4, you have just used the TDD approach for development by writing tests before writing the actual functions. Note the difference in the steps you followed here, compared with those you used in the previous 3 tasks. Don't worry if this last strategy looks counterintuitive or strange at the moment, we will do several more TDD examples in the next module.
 
-> Describe how a new developer could make use of your project.
+## Challenge yourself
 
-To get a local copy up and running, follow these steps.
+*Use these questions to check what you learned during this lesson.*
+- What is the next test you can write for *capitalize(string)*?
+- What can go wrong with this function? For example, what happens if someone provides an integer as an input for this function?
 
-### Prerequisites
+### Submit your exercise
+[Read this FAQ for a reminder on how to submit your exercise.](https://microverse.zendesk.com/hc/en-us/articles/360061344234)
+Now go to your Student Dashboard and submit your exercise.
 
-In order to run this project you need:
+------
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
-### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
-
-If you like this project...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+_If you spot any bugs or issues in this activity, you can [open an issue with your proposed change](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/open_issue.md)._
